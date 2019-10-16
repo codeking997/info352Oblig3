@@ -1,19 +1,11 @@
-# Title     : TODO
-# Objective : TODO
-# Created by: ASUS g751jt
-# Created on: 15.10.2019
+file <- read.csv(file="appendix.csv", header=TRUE, sep=",")
 
-# ----- SCATTERPLOTS -----
-# Use a scatterplot to see if batting average is directly
-# connected to runs produced
-# Load player data
-# if, else and else if works like other languages
-age = 18
+Course = file$Course_Title
+CleanCourse = gsub(" ", "_", Course)
+write.table(file = "Course.txt", CleanCourse, row.names = FALSE)
 
-if(age >= 18) {
-  print("Drive and Vote")
-} else if (age >= 16){
-  print("Drive")
-} else {
-  print("Wait")
-}
+instructor = file$Instructor
+CleanInstructor = gsub(",", "\n", instructor)
+CleanInstructor = gsub(" ", "", CleanInstructor)
+#CleanInstructor = gsub("\"", "", CleanInstructor)
+write.table(file = "instructor.txt", CleanInstructor, row.names = FALSE)
