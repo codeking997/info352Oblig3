@@ -15,6 +15,16 @@ Course = file$Course_Title
 
 year = file$Year
 
+participants2 = file$Participants_.Course_Content_Accessed.
+
+##year1 = filter(participants2,year==1)
+
+##participantsYear1 = filter(year==1, participants2)
+
+##colSums(arguments)
+
+participants3 = file$Launch_Date
+
 participants = file$Certified
 
 institution = file$Institution
@@ -29,7 +39,9 @@ certifiedYear1 =
 
 ##print(harvard)
 
-plot(year, participants)
+
+
+##plot(year, participants2, col="red",main="growth of mooc's")
 
 
 ##year 0-4 y aksen
