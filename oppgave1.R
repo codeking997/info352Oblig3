@@ -33,7 +33,7 @@ mit = file$Course_Title[c(institution=="MITx")]
 
 harvard = file$Course_Title[c(institution=="HarvardX")]
 
-certifiedYear1 =
+
 
 ##plot(x=harvard, y=mit, col="red", main="growth of moocs")
 
