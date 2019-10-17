@@ -44,7 +44,6 @@ sumYear4 = colSums(year4)
 print(sumYear4)
 
 
-
 allYears3 = cbind(sumYear1, sumYear2, sumYear3, sumYear4, all=TRUE)
 
 print(allYears3)
@@ -62,7 +61,6 @@ allYears3 <- as.data.frame(t(allYears3))
 plot(allYears3$Year ,allYears3$Participants_.Course_Content_Accessed.,col="red", xlab="number of courses", ylab="participants",main="dots from left to right representing yearly development of mooc's")
 
 #plot(allYears3$Year, allYears3$Participants_.Course_Content_Accessed.)
-
 
 ##year2 = select(year1, -Year, -Participants_.Course_Content_Accessed.)
 
