@@ -7,7 +7,7 @@
 
 library(tidyverse)
 
-file <- read.csv(file="appendix - appendix.csv", header=TRUE, sep=",")
+file <- read.csv(file="appendix.csv", header=TRUE, sep=",")
 
 year1H = filter(file, Year==1, Institution=="HarvardX")
 year1H <- year1H[ ,c("Year", "Participants_.Course_Content_Accessed.")]

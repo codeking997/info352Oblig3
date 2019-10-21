@@ -16,7 +16,7 @@
 
 library(tidyverse)
 
-file <- read.csv(file="appendix - appendix.csv", header=TRUE, sep=",")
+file <- read.csv(file="appendix.csv", header=TRUE, sep=",")
 
 participants =file$Participants_.Course_Content_Accessed.
 year = file$Year
