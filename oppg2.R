@@ -9,3 +9,4 @@ CleanInstructor = gsub(",", "\n", instructor)
 CleanInstructor = gsub(" ", "", CleanInstructor)
 #CleanInstructor = gsub("\"", "", CleanInstructor)
 write.table(file = "instructor.txt", CleanInstructor, row.names = FALSE)
+
