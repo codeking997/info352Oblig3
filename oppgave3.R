@@ -59,7 +59,16 @@ allYearsMit = cbind(sumYear1, sumYear2, sumYear3, sumYear4, all=TRUE)
 
 allYearsMit <- as.data.frame(t(allYearsMit))
 
-plot(allYears3$Year ,allYears3$Participants_.Course_Content_Accessed.,col="red", xlab="number of courses", ylab="participants",main="dots from left to right representing yearly development of mooc's")
-points(allYearsMit$Year ,allYearsMit$Participants_.Course_Content_Accessed.,col="green")
+
+
+##plot(xlim(-2, 10), ylim(-2, 10))
+
+
+
+plot(allYears3$Year ,allYears3$Participants_.Course_Content_Accessed.,col="red", xlab="number of courses", ylab="participants",main="dots from left to right representing yearly development of mooc's",xlim=c(0,300))
+##par(new = TRUE, mar = c(1000,1000,1000,1000))
+#par(xpd=TRUE)
+points(allYearsMit$Year ,allYearsMit$Participants_.Course_Content_Accessed.,col="green", pch="*")
+
 
 ##plot(allYears3$Year ,allYears3$Participants_.Course_Content_Accessed.,col="red", xlab="number of courses", ylab="participants",main="dots from left to right representing yearly development of mooc's")
